@@ -5,14 +5,14 @@
   "version": "0.0.1",
   "license": "MIT",
   "icon": "icon.png",
-  "publisher": "your-publisher-name",
+  "publisher": "MattyStacks",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-github-username/vscode-sieve-language-support.git"
+    "url": "https://github.com/MattyStacks/vscode-sieve-language-support.git"
   },
-  "homepage": "https://github.com/your-github-username/vscode-sieve-language-support#readme",
+  "homepage": "https://github.com/MattyStacks/vscode-sieve-language-support#readme",
   "bugs": {
-    "url": "https://github.com/your-github-username/vscode-sieve-language-support/issues"
+    "url": "https://github.com/MattyStacks/vscode-sieve-language-support/issues"
   },
   "keywords": [
     "sieve",
