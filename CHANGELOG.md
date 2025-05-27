@@ -4,6 +4,22 @@ All notable changes to the "sieve-language-support" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.0] - 2025-05-26
+
+### Added
+
+- Additional readme screenshots.
+
+### Fixed
+
+- Package publisher to correct publisher.
+
+
+### Changed
+
+- simple sieve test syntax.
+
+
 ## [0.0.1] - 2025-05-23
 
 ### Added
