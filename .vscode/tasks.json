@@ -1,8 +1,7 @@
 // See https://go.microsoft.com/fwlink/?LinkId=733558
 // for the documentation about the tasks.json format
 {
-	"version": "2.0.0",
-	"tasks": [
+	"version": "2.0.0",	"tasks": [
         {
             "label": "Build Extension",
             "type": "shell",
@@ -10,6 +9,21 @@
             "args": [
                 "run",
                 "compile"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$tsc",
+                "$eslint-stylish"
+            ],
+            "isBackground": false
+        },
+        {
+            "label": "npm: pretest",
+            "type": "shell",
+            "command": "npm",
+            "args": [
+                "run",
+                "pretest"
             ],
             "group": "build",
             "problemMatcher": [

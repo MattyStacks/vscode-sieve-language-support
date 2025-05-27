@@ -4,6 +4,37 @@ All notable changes to the "sieve-language-support" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.0] - 2025-05-27
+
+### Added
+- **Web Support**: Extension now works in VS Code for the Web (vscode.dev, github.dev, GitHub Codespaces)
+- **Linter Framework**: Added comprehensive Sieve linting infrastructure (disabled by default)
+  - Syntax validation for missing semicolons and empty statements
+  - Best practice suggestions (e.g., adding 'stop' after fileinto)
+  - Logic warnings for unreachable code
+  - Real-time error detection as you type
+- **Enhanced Testing**: Complete testing infrastructure for development
+  - Comprehensive testing checklist (`TESTING-CHECKLIST.md`)
+  - Additional test files for various scenarios
+- **Build System**: Improved build configuration for cross-platform compatibility
+  - Updated esbuild configuration with "neutral" platform targeting
+  - Enhanced browser compatibility for web environments
+
+### Changed
+- **Extension Architecture**: Refactored for dual desktop/web environment support
+- **Build Process**: Updated bundling to support both Node.js and browser environments
+- **Package Configuration**: Added `browser` entry point for web compatibility
+
+### Fixed
+- **Cross-Platform Compatibility**: Resolved issues with extension loading in web environments
+- **Build Pipeline**: Fixed TypeScript compilation for web-compatible outputs
+
+### Technical Details
+- Added `"browser": "./dist/extension.js"` to package.json for web support
+- Updated esbuild platform from "node" to "neutral" for broader compatibility
+- Prepared optional linter module (`src/linter.ts`) for future activation
+- Enhanced test coverage with multiple Sieve example files
+
 ## [1.0.0] - 2025-05-26
 
 ### Added

@@ -24,12 +24,40 @@ This extension supports syntax highlighting for:
 - **Common Extensions**: Including fileinto, reject, vacation, envelope, and body tests
 - **Advanced Features**: Regular expressions, date tests, and metadata handling
 
+## Email Providers Supporting Sieve
+
+The following online email providers support Sieve email filtering:
+
+### Full Sieve Support
+- **[FastMail](https://www.fastmail.com/)** - Complete Sieve implementation with ManageSieve protocol and web interface
+- **[Migadu](https://www.migadu.com/)** - Full Sieve support with advanced filtering capabilities
+- **[Posteo](https://posteo.de/)** - Privacy-focused email with comprehensive Sieve filtering
+- **[Runbox](https://runbox.com/)** - Norwegian email provider with complete Sieve support
+- **[Zoho Mail](https://www.zoho.com/mail/)** - Business email with extensive Sieve filtering options
+- **[Kolab Now](https://kolabnow.com/)** - Collaboration platform with full Sieve implementation
+- **[Mailbox.org](https://mailbox.org/)** - German email provider with Sieve filtering
+- **[ProtonMail](https://protonmail.com/)** - Encrypted email with server-side Sieve filtering
+- **[Tuta](https://tuta.com/)** (formerly Tutanota) - Secure email with basic Sieve capabilities
+
+
 ## Installation
 
+### VS Code / VS Code Insiders
 1. Open Visual Studio Code
 2. Go to the Extensions view (Ctrl+Shift+X)
 3. Search for "Sieve Language Support"
 4. Click Install
+
+### code-server / OpenVSCode Server
+If the extension isn't available in your marketplace, download and install manually:
+
+```bash
+# Download the extension package
+curl -L "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MattyStacks/vsextensions/sieve-language-support/1.0.0/vspackage" -o sieve-language-support.vsix
+
+# Install the extension
+code-server --install-extension sieve-language-support.vsix
+```
 
 ## Usage
 
@@ -75,6 +103,12 @@ This extension does not contribute any VS Code settings. It works out of the box
 Contributions are welcome! Please feel free to submit issues or pull requests to improve the Sieve language support.
 
 ## Release Notes
+
+### 1.1.0
+Vscode Web Support 
+- Allows the extension to be installed on the web. 
+- Github Codespaces
+- VS Code Server
 
 ### 1.0.0
 

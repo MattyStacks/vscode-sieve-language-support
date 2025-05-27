@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+// import { createSieveLinter } from './linter';
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -11,7 +12,12 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Register language configuration and providers for Sieve files
 	// The TextMate grammar and language configuration files handle the syntax highlighting
-	// Additional language features could be added here in the future
+	
+	// Optional: Add linter support (works in both desktop and web VS Code)
+	// Uncomment the following lines to enable linting:
+	// const { createSieveLinter } = require('./linter');
+	// const linterDisposable = createSieveLinter();
+	// context.subscriptions.push(linterDisposable);
 }
 
 // This method is called when your extension is deactivated
