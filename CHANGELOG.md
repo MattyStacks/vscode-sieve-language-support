@@ -4,6 +4,26 @@ All notable changes to the "sieve-language-support" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.5] - 2025-05-27
+
+### Fixed
+- **Main Branch**: Publishing to the release branch.
+
+
+## [1.1.2] - 2025-05-27
+
+### Fixed
+- **README Image Display**: Fixed broken image link in VS Code marketplace by using absolute GitHub URL
+  - Image now displays correctly in vscode.dev, marketplace, and all web environments
+  - Resolves broken relative path issue in marketplace viewer
+
+## [1.1.1] - 2025-05-27
+
+### Added
+- **Web Support**: Extension now works in VS Code for the Web (vscode.dev, github.dev, GitHub Codespaces)
+- **Virtual Workspaces**: Full compatibility with virtual workspace environments
+- **Untrusted Workspaces**: Safe operation in untrusted/web environments
+
 ## [1.1.0] - 2025-05-27
 
 ### Added
