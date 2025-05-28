@@ -2,7 +2,7 @@
   "name": "sieve-language-support",
   "displayName": "Sieve Language Support",
   "description": "Syntax highlighting for the Sieve email filtering language",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "license": "MIT",
   "icon": "icon.png",
   "publisher": "MattyStacks",
@@ -19,18 +19,22 @@
     "email",
     "filtering",
     "syntax",
-    "highlighting",
-    "rfc5228"
-  ],
-  "engines": {
-    "vscode": "^1.100.0"
+    "highlighting",    "rfc5228"
+  ],  "engines": {
+    "vscode": "^1.63.0"
+  },"categories": [
+    "Programming Languages"  ],
+  "capabilities": {
+    "virtualWorkspaces": {
+      "supported": true
+    },
+    "untrustedWorkspaces": {
+      "supported": true
+    }
   },
-  "categories": [
-    "Programming Languages"
-  ],
   "activationEvents": [],
   "main": "./dist/extension.js",
-  "contributes": {
+  "browser": "./dist/extension.js",  "contributes": {
     "languages": [
       {
         "id": "sieve",
@@ -45,7 +49,32 @@
         "scopeName": "source.sieve",
         "path": "./syntaxes/sieve.tmLanguage.json"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Sieve Language Support",
+      "properties": {
+        "sieve.linting.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Sieve linting and error detection"
+        },        "sieve.linting.protonmail": {
+          "type": "boolean", 
+          "default": true,
+          "description": "Enable ProtonMail-specific linting rules and suggestions"
+        },
+        "sieve.linting.bestPractices": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable best practice suggestions (e.g., adding 'stop' after actions)"
+        },
+        "sieve.linting.severity": {
+          "type": "string",
+          "enum": ["error", "warning", "info"],
+          "default": "warning",
+          "description": "Minimum severity level for linting messages"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
@@ -58,11 +87,10 @@
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "check-types": "tsc --noEmit",
-    "lint": "eslint src",
-    "test": "vscode-test"
+    "lint": "eslint src",    "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.100.0",
+    "@types/vscode": "^1.63.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
