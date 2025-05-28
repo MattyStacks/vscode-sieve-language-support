@@ -56,11 +56,13 @@
 
 ## 📝 Test Files to Use
 
-1. **`simple-test.sieve`** - Basic syntax
-2. **`example.sieve`** - Complex examples  
-3. **`test-advanced.sieve`** - Advanced features
-4. **`test-extension.sieve`** - Created for testing
-5. **`test-linter.sieve`** - Future linter testing
+1. **`test-files/simple-test.sieve`** - Basic syntax
+2. **`test-files/example.sieve`** - Complex examples  
+3. **`test-files/test-advanced.sieve`** - Advanced features
+4. **`test-files/test-extension.sieve`** - Created for testing
+5. **`test-files/test-linter.sieve`** - Future linter testing
+6. **`test-files/test-expire-validation.sieve`** - Expire statement validation
+7. **`test-files/test-protonmail-*.sieve`** - ProtonMail-specific features
 
 ## 🚨 Common Issues to Check
 

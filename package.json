@@ -2,7 +2,7 @@
   "name": "sieve-language-support",
   "displayName": "Sieve Language Support",
   "description": "Syntax highlighting for the Sieve email filtering language",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "license": "MIT",
   "icon": "icon.png",
   "publisher": "MattyStacks",
@@ -34,8 +34,7 @@
   },
   "activationEvents": [],
   "main": "./dist/extension.js",
-  "browser": "./dist/extension.js",
-  "contributes": {
+  "browser": "./dist/extension.js",  "contributes": {
     "languages": [
       {
         "id": "sieve",
@@ -50,7 +49,32 @@
         "scopeName": "source.sieve",
         "path": "./syntaxes/sieve.tmLanguage.json"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Sieve Language Support",
+      "properties": {
+        "sieve.linting.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Sieve linting and error detection"
+        },        "sieve.linting.protonmail": {
+          "type": "boolean", 
+          "default": true,
+          "description": "Enable ProtonMail-specific linting rules and suggestions"
+        },
+        "sieve.linting.bestPractices": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable best practice suggestions (e.g., adding 'stop' after actions)"
+        },
+        "sieve.linting.severity": {
+          "type": "string",
+          "enum": ["error", "warning", "info"],
+          "default": "warning",
+          "description": "Minimum severity level for linting messages"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",

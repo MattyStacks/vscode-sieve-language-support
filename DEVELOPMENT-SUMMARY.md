@@ -29,10 +29,15 @@ This VS Code extension provides comprehensive syntax highlighting for the Sieve 
    │   └── 📄 sieve.tmLanguage.json - TextMate grammar for highlighting
    ├── 📁 src/
    │   ├── 📄 extension.ts - Main extension entry point
+   │   ├── 📄 linter.ts - Smart linting system
    │   └── 📁 test/
    │       └── 📄 extension.test.ts - Unit tests
-   ├── 📄 example.sieve - Basic example script
-   ├── 📄 test-advanced.sieve - Advanced features example
+   ├── 📁 test-files/ - Organized test and example files
+   │   ├── 📄 example.sieve - Basic example script
+   │   ├── 📄 test-advanced.sieve - Advanced features example
+   │   ├── 📄 test-linting-demo.sieve - Linting demonstrations
+   │   ├── 📄 test-expire-validation.sieve - Expire validation tests
+   │   └── 📄 test-protonmail-*.sieve - ProtonMail-specific examples
    └── 📄 README.md - Complete documentation
    ```
 
