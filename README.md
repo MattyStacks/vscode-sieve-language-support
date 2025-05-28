@@ -253,6 +253,9 @@ Contributions are welcome! Please feel free to submit issues or pull requests to
 
 ## Release Notes
 
+### 1.2.1
+- **🚀 Stable Release**: All smart linting features now available in stable channel (promoted from pre-release)
+
 ### 1.2.0
 - **🎉 Major Feature**: Complete smart linting system with real-time error detection
 - **🚀 ProtonMail Support**: Specialized linting rules for ProtonMail's Sieve implementation

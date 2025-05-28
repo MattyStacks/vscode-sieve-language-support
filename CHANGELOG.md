@@ -4,6 +4,12 @@ All notable changes to the "sieve-language-support" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.1] - 2025-05-28
+
+### 🚀 Stable Release
+- **Promoted to Stable**: All features from 1.2.0 pre-release are now available in the stable channel
+- **No Changes**: Identical functionality to 1.2.0 pre-release, just promoted to stable for wider availability
+
 ## [1.2.0] - 2025-05-27
 
 ### 🎉 MAJOR FEATURE: Smart Linting System Added
